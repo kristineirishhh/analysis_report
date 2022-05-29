@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Correlation Analysis Report</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+* {
+  box-sizing: border-box;
+  margin-top: 15px;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 500px;
+}
+
+</style>
+</head>
+
+<body>
+<div class="max-width">
+    <h2 class="title">Correlation Analysis Report</h2>
+</div>
+
+
+<div class="row">
+  <div class="column";>
+    <img src="Weather Features.png" alt="">
+  </div>
+
+  <div class="column">
+    <img src="ASF Features.png" alt="">
+  </div>
+</div>
+
+<p align="justify"; style="margin-left:10%; margin-right:10%">
+	The correlation value denotes how strong the correlation of weather and ASF features to the ASF cases, while the p-value depicts whether the correlation is significant or not. If p-value is greater than 0.05, the null hypothesis will be accepted. But if it is less than or equal to 0.05, then the null hypothesis will be rejected.</p>
+</div>
+<p align="justify"; style="margin-left:10%; margin-right:10%">
+Null Hypothesis: There is no significant correlation between the weather/meteorological data and the number of ASF outbreak cases.<br>Alternative Hypothesis: There is a significant correlation between the weather/meteorological data and the number of ASF outbreak cases.</p>
+
+<p align="justify"; style="margin-left:10%; margin-right:10%">
+A coefficient of correlation of +0.8 or -0.8 indicates a strong correlation between the independent variable and the dependent variable. An r of +0.20 or -0.20 indicates a weak correlation between the variables. When the coefficient of correlation is 0.00 there is no correlation.</p>
+
+<p align="justify"; style="margin-left:10%; margin-right:10%">
+	In the weather features graph, since rainfall and maximum temperature have 0.172334 and 0.194623 correlation value, 0.029972 and 0.010062 p-value, respectively. It means that it has weak but significant correlation to the number of ASF outbreak cases since the p-value is less than 0.05 meaning that the null hypothesis is rejected.</p>
+
+<p align="justify"; style="margin-left:10%; margin-right:10%">
+	While, the correlation values of minimum temperature, mean temperature, relative humidity, specific humidity, wind speed, and wind direction indicates to have closer to no correlation and have higher than 0.05 p-value, which means having no significant correlation to the number of ASF outbreak cases.  Then, the surface pressure having the correlation value of 0.841718, a strong correlation but also have higher p-value which means it also have no significant correlation to the number of ASF outbreak cases.</p>
+
+<p align="justify"; style="margin-left:10%; margin-right:10%">
+	Meanwhile, in the ASF features graph, the pig density’s correlation value result to 0.316382 having weak correlation and p-value of 0.000021 which means that it has significant correlation to the number of ASF outbreak cases. The susceptible feature results to 0.888303 correlation value having the strong correlation and 0.000005 p-value which means it also has significant correlation to the number of ASF outbreak cases.</p>
+
+
+</body>
+</html>
